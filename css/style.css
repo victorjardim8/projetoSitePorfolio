@@ -1,24 +1,40 @@
-*{
+/* Logo Font */
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+/* NavBar Font */
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+/* Font Delicada */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
     text-decoration: none;
 }
 
 header {
-    position: relative;
-    background-color: #d883f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(221,126,255,1) 0%, rgba(103,49,119,1) 100%);
     padding: 25px
 }
 
 .logo {
     font-size: 15px;
-    font-style: oblique;    
+    font-family: "Afacad Flux", sans-serif;    
     font-weight: bold;
-    color: #47214b;
+    font-style: oblique;
+    color: #6f3975;
     text-align: left;   
-    margin-left: 30px;
+    margin-left: 135px;
 }
 
 span {
-    font-size: 25px;
+    font-size: 35px;
+    font-family: "Afacad Flux", sans-serif; 
     font-style: oblique;
     color: #470d4f;
     text-align: left;
@@ -27,9 +43,50 @@ span {
 
 .menu-nav {
     display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-right: 20%;
 }
 
-menu.nav a{
-    align-items: left;
-    margin: 0 25px;
+.menu-nav a {
+    font-size: 20px;
+    font-family: "Exo 2", sans-serif;
+    color: #26072b;
+}
+
+.box {
+    margin-top: 15px;
+    margin-left: 30px
+}
+
+.home {
+    background-color: #e3c4e7;
+    padding: 150px;
+}
+
+.home-div {
+    margin-top: 0px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 
+        0 0 5px #6a3879,   /* leve sombra interna */
+        0 0 10px #6a3879,  /* segunda camada de brilho */
+        0 0 20px #6a3879,  /* terceira camada de brilho */
+        0 0 20px #ae74c9,  /* brilho externo mais suave */
+        0 0 30px #ae74c9, 
+        0 0 30px #ff00ff, 
+        0 0 20px #ff00ff;  /* camada final de brilho roxo */
+}
+
+
+.home-text h1 {
+    font-family: "Playwrite GB S", cursive;
+    font-size: 115px;
+    text-align: center;
+}
+
+.home-text h3 {
+    font-family: "Playwrite GB S", cursive;
+    font-size: 30px;
+    text-align: center;
 }
