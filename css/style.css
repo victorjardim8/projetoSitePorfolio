@@ -8,6 +8,7 @@
 body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -19,7 +20,9 @@ header {
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(90deg, rgba(221,126,255,1) 0%, rgba(103,49,119,1) 100%);
-    padding: 25px
+    padding: 25px;
+    position: fixed;
+    width: 100%;
 }
 
 .logo {
@@ -30,6 +33,11 @@ header {
     color: #6f3975;
     text-align: left;   
     margin-left: 135px;
+    transition: color 0.3s ease;
+}
+
+.logo:hover{
+    color: #ffffff;
 }
 
 span {
@@ -39,6 +47,11 @@ span {
     color: #470d4f;
     text-align: left;
     margin-left: 30px;
+    transition: color 0.3s ease;
+}
+
+span:hover{
+    color: #ffffff;
 }
 
 .menu-nav {
@@ -52,6 +65,11 @@ span {
     font-size: 20px;
     font-family: "Exo 2", sans-serif;
     color: #26072b;
+    transition: color 0.3s ease;
+}
+
+.menu-nav a:hover {
+    color: #ffffff;
 }
 
 .box {
@@ -61,7 +79,7 @@ span {
 
 .home {
     background-color: #e3c4e7;
-    padding: 150px;
+    padding: 400px;
 }
 
 .home-div {
@@ -83,10 +101,93 @@ span {
     font-family: "Playwrite GB S", cursive;
     font-size: 115px;
     text-align: center;
+    user-select: none;
 }
 
 .home-text h3 {
     font-family: "Playwrite GB S", cursive;
     font-size: 30px;
     text-align: center;
+    user-select: none;
 }
+
+.about-me {
+    background-color: #6f3975;
+    padding: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-me-div {
+    margin: 0;
+    flex: 1; 
+}
+
+.about-me-div > span {
+    display: block;
+    font-family: "Exo 2", sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    color: #f9cfff;
+    text-shadow: 2px 2px #d375b78a;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    flex-shrink: 0; 
+    margin-left: 50px;
+}
+
+.profile-photo img {
+    max-width: 100%;
+    width: 500px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 15px #ae74c9, 0 0 30px #ae74c9, 0 0 45px #ae74c9, 0 0 60px #ae74c9;
+    border-radius: 10px;
+}
+
+.social-media {
+    background-color: #e3c4e7;
+    padding: 300px;
+}
+
+.social-media-div {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.card {
+    background-color: #e3c4e7;
+    border-color: #e3c4e7;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 
+                0 0 5px #6a3879,   /* leve sombra interna */
+                0 0 5px #6a3879,  /* segunda camada de brilho */
+                0 0 5px #6a3879,  /* terceira camada de brilho */
+                0 0 5px #ae74c9,  /* brilho externo mais suave */
+                0 0 10px #ae74c9, 
+                0 0 10px #ff00ff, 
+                0 0 20px #ff00ff;  /* camada final de brilho roxo */
+}
+
+.card > img {
+    width: 250px;
+}
+
+.card-body > a {
+    color: white;
+    text-shadow: none;
+    background-color: #26072b;
+    border: #26072b;
+    transition: background-color 0.3s ease;
+}
+
+.card-body > a:hover {
+    background-color: #ae74c9;
+}
+
