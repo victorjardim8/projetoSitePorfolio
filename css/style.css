@@ -16,6 +16,8 @@ a {
 }
 
 header {
+    z-index: 1;
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,7 +60,7 @@ span:hover{
     display: flex;
     list-style-type: none;
     justify-content: space-around;
-    margin-right: 20%;
+    margin-right: 15%;
 }
 
 .menu-nav a {
@@ -77,9 +79,13 @@ span:hover{
     margin-left: 30px
 }
 
+.box > a > i {
+    font-size: 30px;
+}
+
 .home {
     background-color: #e3c4e7;
-    padding: 400px;
+    padding: 350px 0 350px 0;
 }
 
 .home-div {
@@ -149,14 +155,14 @@ span:hover{
 
 .social-media {
     background-color: #e3c4e7;
-    padding: 300px;
+    padding: 215px 0 220px 0;
 }
 
 .social-media-div {
     display: flex;
     justify-content: space-between;
-    margin-right: 15%;
-    margin-left: 15%;
+    margin-right: 30%;
+    margin-left: 35%;
 }
 
 .card {
@@ -184,10 +190,14 @@ span:hover{
     text-shadow: none;
     background-color: #26072b;
     border: #26072b;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .card-body > a:hover {
     background-color: #ae74c9;
+    transform: scale(1.05);
 }
 
+@media screen and(max-width: 1020){
+    
+}
