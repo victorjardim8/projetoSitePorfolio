@@ -5,6 +5,14 @@
 /* Font Delicada */
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #26072b;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -17,13 +25,12 @@ a {
 
 header {
     z-index: 1;
-    position: sticky;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(90deg, rgba(221,126,255,1) 0%, rgba(103,49,119,1) 100%);
     padding: 25px;
-    position: fixed;
     width: 100%;
 }
 
@@ -196,8 +203,4 @@ span:hover{
 .card-body > a:hover {
     background-color: #ae74c9;
     transform: scale(1.05);
-}
-
-@media screen and(max-width: 1020){
-    
 }
